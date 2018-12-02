@@ -2,6 +2,6 @@ FROM andzuc/gentoo-armbuilder
 
 RUN time crossdev \
     --stable \
-    --target ${TARGET} \
+    --target "${DOCKER_TARGET}" \
     --portage "-v" \
     --stage0
